@@ -171,12 +171,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 { name: 'Photoshop', text: 'Ps' },
                 { name: 'Illustrator', text: 'Ai' }
             ],
-            challenge: 'Diseñar un wearable que ayude a mejorar la postura corporal combinando tecnología física y digital.',
-            solution: 'Desarrollamos Muva, un dispositivo wearable con sensores Arduino que monitorea la postura en tiempo real y proporciona feedback a través de una aplicación móvil diseñada en Figma y desarrollada en Unity.',
+            challenge: 'Crear un guante equipado con sensores, proyectado para indicar al usuario la necesidad de una pausa tras movimientos repetitivos.',
+            solution: 'Desarrollamos Muva, un dispositivo wearable que integra hardware y software. El guante con sensores Arduino monitorea los movimientos repetitivos en tiempo real y proporciona feedback mediante una aplicación móvil diseñada en Figma y desarrollada en Unity, alertando al usuario cuando necesita tomar una pausa.',
             images: [
-                'img/bastidores/muva.png'
+                'img/bastidores/muva.png',
+                'img/bastidores/muva/imagen2.jpg',
+                'img/bastidores/muva/imagen3.jpg',
+                'img/bastidores/muva/imagen4.jpg'
             ],
-            pdfUrl: null
+            pdfUrl: 'https://drive.google.com/file/d/MUVA_PDF_ID/preview',
+            figmaUrl: 'https://www.figma.com/proto/MUVA_PROTOTYPE_LINK'
         },
         loopi: {
             title: 'Loopi',
@@ -195,8 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'img/bastidores/loopi.png',
                 'img/bastidores/loopi/prototipo.jpg',
                 'img/bastidores/loopi/otroprotoripo.jpg',
-                'img/bastidores/loopi/medidas.jpg',
-                'img/bastidores/loopi/final.jpg'
+                'img/bastidores/loopi/medidas.jpg'
             ],
             pdfUrl: 'https://drive.google.com/file/d/1GXa45a0WtGb7hsoI67IQmeRcbYsarwFE/preview'
         },
@@ -210,12 +213,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 { name: 'Illustrator', text: 'Ai' },
                 { name: 'Photoshop', text: 'Ps' }
             ],
-            challenge: 'Diseñar una interfaz de usuario intuitiva y atractiva para una aplicación móvil.',
-            solution: 'Creamos un prototipo completo en Figma con animaciones en After Effects, siguiendo principios de diseño centrado en el usuario y realizando pruebas de usabilidad iterativas.',
+            challenge: 'Crear una interfaz para una aplicación móvil que incentive el reciclaje urbano en São Paulo.',
+            solution: 'Aplicación interactiva y social que informa sobre el reciclaje, incentiva la competencia amistosa entre usuarios y amigos para ver quién recicla más, e informa cuándo pasará el camión de reciclaje por la calle del usuario.',
             images: [
-                'img/bastidores/trevu.png'
+                'img/bastidores/trevu.png',
+                'img/bastidores/trevo/imagen2.jpg',
+                'img/bastidores/trevo/imagen3.jpg',
+                'img/bastidores/trevo/imagen4.jpg'
             ],
-            pdfUrl: null
+            pdfUrl: 'https://drive.google.com/file/d/TREVO_PDF_ID/preview',
+            figmaUrl: 'https://www.figma.com/proto/TREVO_PROTOTYPE_LINK'
         },
         moonclouday: {
             title: 'MoonClouday',
@@ -228,14 +235,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 { name: 'Photoshop', text: 'Ps' },
                 { name: 'Illustrator', text: 'Ai' }
             ],
-            challenge: 'Crear un portfolio personal que refleje mi identidad como diseñadora digital y muestre mis proyectos de manera efectiva.',
-            solution: 'Desarrollé este sitio web responsive usando Bootstrap y JavaScript vanilla, implementando animaciones suaves y un diseño colorido que representa mi estilo personal.',
+            challenge: 'Crear una página web personal.',
+            solution: 'Página web dirigida a diseñadores principiantes o que están iniciando la carrera de diseño. Incluye blog personal, buscador de tutoriales y galería de artículos de diseño.',
             images: [
-                'img/bastidores/moon.jpg'
+                'img/bastidores/moon.jpg',
+                'img/bastidores/moon/imagen2.jpg',
+                'img/bastidores/moon/imagen3.jpg',
+                'img/bastidores/moon/imagen4.jpg'
             ],
             pdfUrl: null
         },
-        // NUEVOS PROYECTOS
         'menu-digital': {
             title: 'Menú Digital',
             category: 'Editorial',
@@ -244,12 +253,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 { name: 'InDesign', text: 'Id' },
                 { name: 'Illustrator', text: 'Ai' }
             ],
-            challenge: 'Crear un menú digital interactivo para restaurante que sea atractivo y funcional.',
-            solution: 'Diseñé un menú digital usando InDesign con hipervínculos interactivos, combinando ilustraciones en Illustrator para crear una experiencia visual cohesiva.',
+            challenge: 'Crear un menú digital interactivo para un restaurante ficticio de tapas españolas.',
+            solution: 'Creación de una identidad visual para el restaurante, investigación del menú y de los platos a servir, selección de imágenes coherentes con la identidad del restaurante, desarrollo de un menú que informe al cliente cómo se elabora cada plato de tapas, e inclusión de un botón para realizar reservas en el restaurante.',
             images: [
                 'img/editorial/menu-digital.jpg'
             ],
-            pdfUrl: null
+            pdfUrl: 'https://drive.google.com/file/d/MENU_DIGITAL_PDF_ID/preview'
         },
         'revista-digital': {
             title: 'Revista Digital',
@@ -258,12 +267,12 @@ document.addEventListener('DOMContentLoaded', function() {
             tools: [
                 { name: 'Canva', icon: 'palette' }
             ],
-            challenge: 'Desarrollar una revista digital con navegación interactiva mediante hipervínculos.',
-            solution: 'Utilicé Canva para crear una revista digital completamente funcional con sistema de hipervínculos que permite navegación fluida entre secciones.',
+            challenge: 'Crear una revista digital de moda.',
+            solution: 'Pieza editorial interactiva para tablet enfocada en moda urbana. Contiene videos, tips según el tipo de cuerpo, hipervínculos a perfiles de influencers y ubicaciones donde encontrar ropa de buena calidad a bajo costo.',
             images: [
                 'img/editorial/revista-digital.jpg'
             ],
-            pdfUrl: null
+            pdfUrl: 'https://drive.google.com/file/d/REVISTA_DIGITAL_PDF_ID/preview'
         },
         'portada-libro': {
             title: 'Portada de Libro',
@@ -273,53 +282,53 @@ document.addEventListener('DOMContentLoaded', function() {
                 { name: 'Krita', text: 'Kr' },
                 { name: 'Affinity', text: 'Af' }
             ],
-            challenge: 'Diseñar una portada de libro que capture la esencia de la narrativa y atraiga al lector.',
-            solution: 'Combiné ilustración digital en Krita con composición y tipografía en Affinity para crear una portada visualmente impactante.',
+            challenge: 'Transmitir el contenido del libro a través de una ilustración.',
+            solution: 'Desarrollo de una portada tras pruebas de color y diálogo con el cliente. Diseño que une tapa y contratapa. Estilo que combina lo minimalista y lo artístico mediante el uso de texturas.',
             images: [
                 'img/editorial/portada-libro.jpg'
             ],
             pdfUrl: null
         },
         'poster-1': {
-            title: 'Poster Creativo 1',
+            title: 'Póster Creativo 1',
             category: 'Poster',
             type: 'Personal',
             tools: [
                 { name: 'Illustrator', text: 'Ai' },
                 { name: 'Photoshop', text: 'Ps' }
             ],
-            challenge: 'Crear un poster con un enfoque experimental que explore conceptos visuales innovadores.',
-            solution: 'Desarrollé un poster usando técnicas mixtas entre Illustrator y Photoshop, combinando elementos vectoriales con texturas fotográficas.',
+            challenge: 'Dar a conocer una palabra costumbrista cruceña a un público extranjero.',
+            solution: 'Afiche tipográfico digital con pequeñas ilustraciones hechas a mano.',
             images: [
                 'img/posters/poster-1.jpg'
             ],
             pdfUrl: null
         },
         'poster-2': {
-            title: 'Poster Creativo 2',
+            title: 'It\'s Cheruche Time',
             category: 'Poster',
             type: 'Personal',
             tools: [
                 { name: 'Illustrator', text: 'Ai' },
                 { name: 'Photoshop', text: 'Ps' }
             ],
-            challenge: 'Diseñar un poster conceptual que comunique una idea abstracta de forma visual.',
-            solution: 'Creé una composición visual única utilizando geometría en Illustrator y efectos atmosféricos en Photoshop.',
+            challenge: 'Mezclar un elemento globalizado con un elemento tradicional cruceño.',
+            solution: 'Experimentación de texturas y tipografías en un único afiche digital.',
             images: [
                 'img/posters/poster-2.jpg'
             ],
             pdfUrl: null
         },
         'poster-3': {
-            title: 'Poster Creativo 3',
+            title: 'Póster Creativo 3',
             category: 'Poster',
             type: 'Personal',
             tools: [
                 { name: 'Illustrator', text: 'Ai' },
                 { name: 'Photoshop', text: 'Ps' }
             ],
-            challenge: 'Desarrollar un poster artístico que explore la relación entre forma y color.',
-            solution: 'Experimenté con paletas de color vibrantes y formas orgánicas, combinando ilustración vectorial con acabados digitales.',
+            challenge: 'Informar sobre el nombre coloquial o costumbrista que reciben las cigarras en Santa Cruz de la Sierra.',
+            solution: 'Afiche digital que experimenta con tipografía, jerarquía visual, formas y textura de imagen.',
             images: [
                 'img/posters/poster-3.jpg'
             ],
@@ -333,8 +342,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 { name: 'Krita', text: 'Kr' },
                 { name: 'Photoshop', text: 'Ps' }
             ],
-            challenge: 'Crear una ilustración digital original que demuestre dominio técnico y visión artística.',
-            solution: 'Desarrollé una ilustración completa usando Krita para el proceso de pintura digital, con retoques finales en Photoshop.',
+            challenge: 'Dar una nueva reinterpretación a El Principito.',
+            solution: 'Ilustración digital con textura de crayón. Estilo realista del personaje, utilizando el crayón como recurso visual asociado a lo infantil.',
             images: [
                 'img/ilustracion/ilustracion-digital.jpg'
             ],
@@ -348,23 +357,33 @@ document.addEventListener('DOMContentLoaded', function() {
                 { name: 'After Effects', text: 'Ae' },
                 { name: 'Photoshop', text: 'Ps' }
             ],
-            challenge: 'Crear un proyecto de documentación visual que registre y presente información de manera efectiva.',
-            solution: 'Produje un proyecto audiovisual completo usando After Effects para animación y edición, con gráficos diseñados en Photoshop.',
+            challenge: 'Documentar mediante fotografía y video el pueblo de San José de Chiquitos, Santa Cruz, Bolivia.',
+            solution: null,
             images: [
                 'img/audiovisual/doc-audiovisual.jpg'
+            ],
+            videos: [
+                'videos/audiovisual/video1.mp4',
+                'videos/audiovisual/video2.mp4',
+                'videos/audiovisual/video3.mp4'
+            ],
+            photos: [
+                'img/audiovisual/foto1.jpg',
+                'img/audiovisual/foto2.jpg',
+                'img/audiovisual/foto3.jpg'
             ],
             pdfUrl: null
         },
         'poster-historias': {
-            title: 'Poster Digital + Historias Instagram',
+            title: 'Póster Digital + Historias Instagram',
             category: 'Poster + Social Media',
             type: 'Universidad',
             tools: [
                 { name: 'Illustrator', text: 'Ai' },
                 { name: 'Photoshop', text: 'Ps' }
             ],
-            challenge: 'Desarrollar una campaña visual coherente para poster digital e historias de Instagram.',
-            solution: 'Creé un sistema visual unificado adaptado para múltiples formatos, manteniendo consistencia en la identidad visual de la campaña.',
+            challenge: 'Dar una nueva imagen a las publicaciones de una banda alternativa pequeña de Santa Cruz de la Sierra.',
+            solution: 'Desarrollo de un póster digital y creación de un conjunto de historias de Instagram animadas. Proceso basado en brief inicial y entrevistas a los músicos para definir el mensaje a transmitir.',
             images: [
                 'img/posters/poster-historias.jpg'
             ],
@@ -377,8 +396,8 @@ document.addEventListener('DOMContentLoaded', function() {
             tools: [
                 { name: 'Illustrator', text: 'Ai' }
             ],
-            challenge: 'Desarrollar una identidad visual completa para una marca, incluyendo logo, paleta de colores y aplicaciones.',
-            solution: 'Creé un sistema de identidad visual cohesivo en Illustrator, desarrollando manual de marca con todas las aplicaciones y lineamientos de uso.',
+            challenge: 'Desarrollar una marca ficticia.',
+            solution: 'Conceptualización de una cafetería innovadora y maximalista. Marca llena de color y energía. Desarrollo completo de su identidad visual.',
             images: [
                 'img/branding/boheme.jpg'
             ],
@@ -422,6 +441,51 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         ` : '';
         
+        let figmaHTML = project.figmaUrl ? `
+            <div class="project-figma-link">
+                <a href="${project.figmaUrl}" target="_blank" class="btn-figma">
+                    <i class="bi bi-palette-fill"></i>
+                    Ver Prototipo en Figma
+                </a>
+            </div>
+        ` : '';
+        
+        let solutionHTML = project.solution ? `
+            <div class="project-info-section">
+                <h4><i class="bi bi-check-circle-fill"></i> Solución</h4>
+                <p>${project.solution}</p>
+            </div>
+        ` : '';
+        
+        let videosHTML = project.videos ? `
+            <div class="project-videos">
+                <h4 style="font-family: 'Urbanist', sans-serif; font-weight: 700; margin-bottom: 20px;">
+                    <i class="bi bi-camera-video-fill"></i> Videos
+                </h4>
+                <div class="videos-grid">
+                    ${project.videos.map(video => `
+                        <video controls>
+                            <source src="${video}" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    `).join('')}
+                </div>
+            </div>
+        ` : '';
+        
+        let photosHTML = project.photos ? `
+            <div class="project-photos">
+                <h4 style="font-family: 'Urbanist', sans-serif; font-weight: 700; margin-bottom: 20px;">
+                    <i class="bi bi-camera-fill"></i> Fotografías
+                </h4>
+                <div class="photos-grid">
+                    ${project.photos.map(photo => `
+                        <img src="${photo}" alt="${project.title}" loading="lazy">
+                    `).join('')}
+                </div>
+            </div>
+        ` : '';
+        
         modalContent.innerHTML = `
             <div class="project-detail">
                 <div class="project-detail-header">
@@ -436,15 +500,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     </span>
                 </div>
                 
+                ${figmaHTML}
+                
                 <div class="project-info-section">
                     <h4><i class="bi bi-lightning-charge-fill"></i> Desafío</h4>
                     <p>${project.challenge}</p>
                 </div>
                 
-                <div class="project-info-section">
-                    <h4><i class="bi bi-check-circle-fill"></i> Solución</h4>
-                    <p>${project.solution}</p>
-                </div>
+                ${solutionHTML}
                 
                 ${imagesHTML ? `
                     <div class="project-gallery">
@@ -452,12 +515,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 ` : ''}
                 
+                ${videosHTML}
+                
+                ${photosHTML}
+                
                 ${pdfHTML}
             </div>
         `;
         
         // Agregar click en imágenes para ampliar
-        modalContent.querySelectorAll('.project-gallery img').forEach(img => {
+        modalContent.querySelectorAll('.project-gallery img, .photos-grid img').forEach(img => {
             img.addEventListener('click', function() {
                 // Crear modal de imagen ampliada
                 const imageModal = document.createElement('div');
@@ -488,6 +555,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // TYPEWRITER EFFECT (HERO)
     // ===================================
     const heroTitle = document.querySelector('.hero-title');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     
     if (heroTitle && !prefersReducedMotion.matches) {
         const text = heroTitle.textContent;
@@ -704,6 +772,68 @@ style.textContent = `
     .close-zoom:hover {
         color: #FF9933;
         transform: rotate(90deg);
+    }
+    
+    /* Estilos para botón Figma */
+    .project-figma-link {
+        text-align: center;
+        margin: 30px 0;
+    }
+    
+    .btn-figma {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: linear-gradient(135deg, #B882D9, #A3CFD9);
+        color: white;
+        padding: 15px 35px;
+        border-radius: 50px;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        transition: all 0.3s;
+        box-shadow: 0 5px 20px rgba(184, 130, 217, 0.3);
+    }
+    
+    .btn-figma:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 30px rgba(184, 130, 217, 0.5);
+        color: white;
+    }
+    
+    /* Estilos para videos y fotos */
+    .videos-grid,
+    .photos-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin: 20px 0;
+    }
+    
+    .videos-grid video {
+        width: 100%;
+        border-radius: 15px;
+        border: 3px dashed var(--color-blue);
+    }
+    
+    .photos-grid img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 15px;
+        border: 3px dashed var(--color-blue);
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+    
+    .photos-grid img:hover {
+        transform: scale(1.05);
+        border-style: solid;
+    }
+    
+    .project-videos,
+    .project-photos {
+        margin: 30px 0;
     }
 `;
 document.head.appendChild(style);
