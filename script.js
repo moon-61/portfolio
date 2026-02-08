@@ -169,12 +169,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 { name: 'Unity', icon: 'controller' },
                 { name: 'Arduino', icon: 'cpu' },
                 { name: 'Photoshop', text: 'Ps' },
-                { name: 'Illustrator', text: 'Ai' }
+                { name: 'Illustrator', text: 'Ai' } 
             ],
             challenge: 'Crear un guante equipado con sensores, proyectado para indicar al usuario la necesidad de una pausa tras movimientos repetitivos.',
             solution: 'Desarrollamos Muva, un dispositivo wearable que integra hardware y software. El guante con sensores Arduino monitorea los movimientos repetitivos en tiempo real y proporciona feedback mediante una aplicación móvil diseñada en Figma y desarrollada en Unity, alertando al usuario cuando necesita tomar una pausa.',
             images: [
-                'img/bastidores/muva.png',
+                'img/muva/electronica.png',
                 'img/bastidores/muva/imagen2.jpg',
                 'img/bastidores/muva/imagen3.jpg',
                 'img/bastidores/muva/imagen4.jpg'
