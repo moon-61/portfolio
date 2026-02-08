@@ -175,9 +175,9 @@ document.addEventListener('DOMContentLoaded', function() {
             solution: 'Desarrollamos Muva, un dispositivo wearable que integra hardware y software. El guante con sensores Arduino monitorea los movimientos repetitivos en tiempo real y proporciona feedback mediante una aplicación móvil diseñada en Figma y desarrollada en Unity, alertando al usuario cuando necesita tomar una pausa.',
             images: [
                 'img/muva/electronica.png',
-                'img/bastidores/muva/imagen2.jpg',
-                'img/bastidores/muva/imagen3.jpg',
-                'img/bastidores/muva/imagen4.jpg'
+                'img/muva/app2.jpg',
+                'img/muva/luva.jpg',
+                'img/muva/ensamblagem.jpg'
             ],
             pdfUrl: 'https://drive.google.com/file/d/1LKwEpHds_10BRXDb8e-OOD8iu_mFsVKR/preview',
             figmaUrl: 'https://www.figma.com/proto/U557GDsN1lSie3KG0nPnj5/Wireframes?node-id=41-80&p=f&t=YpY6oa1gMBWKGaBU-1&scaling=contain&content-scaling=fixed&page-id=0%3A1'
