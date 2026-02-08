@@ -196,10 +196,10 @@ document.addEventListener('DOMContentLoaded', function() {
             challenge: 'Crear un sistema de mobiliario educativo modular que se adapte a diferentes actividades de aprendizaje y edades.',
             solution: 'Loopi es un sistema de sillas modulares diseñadas con AutoCAD e Inventor que permite configuraciones flexibles para espacios educativos modernos, promoviendo la creatividad y colaboración.',
             images: [
-                'img/bastidores/loopi.png',
-                'img/bastidores/loopi/prototipo.jpg',
-                'img/bastidores/loopi/otroprotoripo.jpg',
-                'img/bastidores/loopi/medidas.jpg'
+                'img/loopi/prototipo.jpg',
+                'img/loopi/otroprotoripo.jpg',
+                'img/loopi/medidas.jpg',
+                'img/loopi/final.jpg'
             ],
             pdfUrl: 'https://drive.google.com/file/d/1GXa45a0WtGb7hsoI67IQmeRcbYsarwFE/preview'
         },
