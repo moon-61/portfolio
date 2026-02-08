@@ -179,8 +179,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 'img/bastidores/muva/imagen3.jpg',
                 'img/bastidores/muva/imagen4.jpg'
             ],
-            pdfUrl: 'https://drive.google.com/file/d/MUVA_PDF_ID/preview',
-            figmaUrl: 'https://www.figma.com/proto/MUVA_PROTOTYPE_LINK'
+            pdfUrl: 'https://drive.google.com/file/d/1LKwEpHds_10BRXDb8e-OOD8iu_mFsVKR/view?usp=drive_link/preview',
+            figmaUrl: 'https://www.figma.com/proto/U557GDsN1lSie3KG0nPnj5/Wireframes?node-id=41-80&p=f&t=YpY6oa1gMBWKGaBU-1&scaling=contain&content-scaling=fixed&page-id=0%3A1'
         },
         loopi: {
             title: 'Loopi',
