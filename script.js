@@ -203,8 +203,8 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             pdfUrl: 'https://drive.google.com/file/d/1GXa45a0WtGb7hsoI67IQmeRcbYsarwFE/preview'
         },
-        trevo: {
-            title: 'Trevo',
+        treevo: {
+            title: 'Treevo',
             category: 'UI/UX Design',
             type: 'Universidad',
             tools: [
@@ -216,10 +216,10 @@ document.addEventListener('DOMContentLoaded', function() {
             challenge: 'Crear una interfaz para una aplicación móvil que incentive el reciclaje urbano en São Paulo.',
             solution: 'Aplicación interactiva y social que informa sobre el reciclaje, incentiva la competencia amistosa entre usuarios y amigos para ver quién recicla más, e informa cuándo pasará el camión de reciclaje por la calle del usuario.',
             images: [
-                'img/bastidores/trevu.png',
-                'img/bastidores/trevo/imagen2.jpg',
-                'img/bastidores/trevo/imagen3.jpg',
-                'img/bastidores/trevo/imagen4.jpg'
+                'img/trevo/wireframes.png',
+                'img/trevo/componentes.jpg',
+                'img/trevo/treevo.jpg',
+                'img/trevo/exploracion.jpg'
             ],
             pdfUrl: 'https://drive.google.com/file/d/1f3MV1CTnPrR7iEAH1xSsRVKB-WnHjdYE/preview',
             figmaUrl: 'https://www.figma.com/proto/PLRp9d0Debb2SpX4chcrsb/Treevo?page-id=0%3A1&node-id=1069-511&p=f&viewport=-891%2C1044%2C0.31&t=mSiBQdtJxyJWx0GT-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1069%3A511'
