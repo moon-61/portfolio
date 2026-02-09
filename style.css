@@ -1061,6 +1061,21 @@ body {
     border-style: solid;
 }
 
+/* ⭐ NUEVO: Galería especial para proyectos con una sola imagen */
+.project-gallery.single-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-gallery.single-image img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
 .project-pdf-viewer {
     margin: 30px 0;
 }

@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'img/moon/CODIGO.jpg'
             ],
             pdfUrl: null,
-            websiteUrl: 'https://moon-61.github.io/moonclouday/html/home-ES.html'  // ⭐ AÑADE AQUÍ TU URL
+            websiteUrl: 'https://moon-61.github.io/moonclouday/html/home-ES.html'
         },
         'menu-digital': {
             title: 'Menú Digital',
@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', function() {
             challenge: 'Crear un menú digital interactivo para un restaurante ficticio de tapas españolas.',
             solution: 'Creación de una identidad visual para el restaurante, investigación del menú y de los platos a servir, selección de imágenes coherentes con la identidad del restaurante, desarrollo de un menú que informe al cliente cómo se elabora cada plato de tapas, e inclusión de un botón para realizar reservas en el restaurante.',
             images: [
-                'img/menu/ideamuch.png'
+                'img/editorial/ideamuch.png'
             ],
             pdfUrl: 'https://drive.google.com/file/d/14rTEEShni_J2DE2KUD_LF9noLFsI--Tu/preview'
         },
@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', function() {
             challenge: 'Crear una revista digital de moda.',
             solution: 'Pieza editorial interactiva para tablet enfocada en moda urbana. Contiene videos, tips según el tipo de cuerpo, hipervínculos a perfiles de influencers y ubicaciones donde encontrar ropa de buena calidad a bajo costo.',
             images: [
-                'img/editorial/revista-digital.jpg'
+                'img/editorial/portadarevista.jpg'
             ],
             pdfUrl: 'https://drive.google.com/file/d/1jXt23QzmH_rLlU9EukSRtTtoQIlrBA_n/preview'
         },
@@ -286,7 +286,7 @@ document.addEventListener('DOMContentLoaded', function() {
             challenge: 'Transmitir el contenido del libro a través de una ilustración.',
             solution: 'Desarrollo de una portada tras pruebas de color y diálogo con el cliente. Diseño que une tapa y contratapa. Estilo que combina lo minimalista y lo artístico mediante el uso de texturas.',
             images: [
-                'img/editorial/portada-libro.jpg'
+                'img/editorial/portada'
             ],
             pdfUrl: null
         },
@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', function() {
             challenge: 'Dar a conocer una palabra costumbrista cruceña a un público extranjero.',
             solution: 'Afiche tipográfico digital con pequeñas ilustraciones hechas a mano.',
             images: [
-                'img/posters/poster-1.jpg'
+                'img/posters/horneao.jpg'
             ],
             pdfUrl: null
         },
@@ -316,7 +316,7 @@ document.addEventListener('DOMContentLoaded', function() {
             challenge: 'Mezclar un elemento globalizado con un elemento tradicional cruceño.',
             solution: 'Experimentación de texturas y tipografías en un único afiche digital.',
             images: [
-                'img/posters/poster-2.jpg'
+                'img/posters/cheruje.jpg'
             ],
             pdfUrl: null
         },
@@ -331,7 +331,7 @@ document.addEventListener('DOMContentLoaded', function() {
             challenge: 'Informar sobre el nombre coloquial o costumbrista que reciben las cigarras en Santa Cruz de la Sierra.',
             solution: 'Afiche digital que experimenta con tipografía, jerarquía visual, formas y textura de imagen.',
             images: [
-                'img/posters/poster-3.jpg'
+                'img/posters/cuco.jpg'
             ],
             pdfUrl: null
         },
@@ -346,7 +346,7 @@ document.addEventListener('DOMContentLoaded', function() {
             challenge: 'Dar una nueva reinterpretación a El Principito.',
             solution: 'Ilustración digital con textura de crayón. Estilo realista del personaje, utilizando el crayón como recurso visual asociado a lo infantil.',
             images: [
-                'img/ilustracion/ilustracion-digital.jpg'
+                'img/posters/elprincipito.png'
             ],
             pdfUrl: null
         },
@@ -360,18 +360,14 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             challenge: 'Documentar mediante fotografía y video el pueblo de San José de Chiquitos, Santa Cruz, Bolivia.',
             solution: null,
-            images: [
-                'img/audiovisual/doc-audiovisual.jpg'
-            ],
+            images: [],
             videos: [
-                'videos/audiovisual/video1.mp4',
-                'videos/audiovisual/video2.mp4',
-                'videos/audiovisual/video3.mp4'
+                'img/documentacion/videos.mp4'
             ],
             photos: [
-                'img/audiovisual/foto1.jpg',
-                'img/audiovisual/foto2.jpg',
-                'img/audiovisual/foto3.jpg'
+                'img/documentacion/foto1.jpg',
+                'img/documentacion/foto2.jpg',
+                'img/documentacion/foto3.jpg'
             ],
             pdfUrl: null
         },
@@ -386,7 +382,9 @@ document.addEventListener('DOMContentLoaded', function() {
             challenge: 'Dar una nueva imagen a las publicaciones de una banda alternativa pequeña de Santa Cruz de la Sierra.',
             solution: 'Desarrollo de un póster digital y creación de un conjunto de historias de Instagram animadas. Proceso basado en brief inicial y entrevistas a los músicos para definir el mensaje a transmitir.',
             images: [
-                'img/posters/poster-historias.jpg'
+                'img/posters/Rebis.gif',
+                'img/posters/Rebis1.gif',
+                'img/posters/Rebis2.gif'
             ],
             pdfUrl: null
         },
@@ -400,7 +398,10 @@ document.addEventListener('DOMContentLoaded', function() {
             challenge: 'Desarrollar una marca ficticia.',
             solution: 'Conceptualización de una cafetería innovadora y maximalista. Marca llena de color y energía. Desarrollo completo de su identidad visual.',
             images: [
-                'img/branding/boheme.jpg'
+                'img/identidad/folleto.jpg',
+                'img/identidad/gafetes.jpg',
+                'img/identidad/stickers.jpg',
+                'img/identidad/tarjetas.jpg'
             ],
             pdfUrl: null
         }
@@ -429,6 +430,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }).join('');
         
+        // ⭐ DETECTAR SI ES UNA SOLA IMAGEN para aplicar clase especial
+        const isSingleImage = project.images.length === 1;
+        const galleryClass = isSingleImage ? 'project-gallery single-image' : 'project-gallery';
+        
         let imagesHTML = project.images.map(img => 
             `<img src="${img}" alt="${project.title}" loading="lazy">`
         ).join('');
@@ -450,6 +455,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </a>
             </div>
         ` : '';
+        
         let websiteHTML = project.websiteUrl ? `
             <div class="project-figma-link">
                 <a href="${project.websiteUrl}" target="_blank" class="btn-website">
@@ -458,6 +464,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </a>
             </div>
         ` : '';
+        
         let solutionHTML = project.solution ? `
             <div class="project-info-section">
                 <h4><i class="bi bi-check-circle-fill"></i> Solución</h4>
@@ -519,7 +526,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ${solutionHTML}
                 
                 ${imagesHTML ? `
-                    <div class="project-gallery">
+                    <div class="${galleryClass}">
                         ${imagesHTML}
                     </div>
                 ` : ''}
