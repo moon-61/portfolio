@@ -238,12 +238,13 @@ document.addEventListener('DOMContentLoaded', function() {
             challenge: 'Crear una página web personal.',
             solution: 'Página web dirigida a diseñadores principiantes o que están iniciando la carrera de diseño. Incluye blog personal, buscador de tutoriales y galería de artículos de diseño.',
             images: [
-                'img/bastidores/moon.jpg',
-                'img/bastidores/moon/imagen2.jpg',
-                'img/bastidores/moon/imagen3.jpg',
-                'img/bastidores/moon/imagen4.jpg'
+                'img/moon/notas3.jpg',
+                'img/moon/notas4.jpg',
+                'img/moon/figma.jpg',
+                'img/moon/CODIGO.jpg'
             ],
-            pdfUrl: null
+            pdfUrl: null,
+            websiteUrl: 'https://moon-61.github.io/moonclouday/html/home-ES.html'  // ⭐ AÑADE AQUÍ TU URL
         },
         'menu-digital': {
             title: 'Menú Digital',
@@ -256,9 +257,9 @@ document.addEventListener('DOMContentLoaded', function() {
             challenge: 'Crear un menú digital interactivo para un restaurante ficticio de tapas españolas.',
             solution: 'Creación de una identidad visual para el restaurante, investigación del menú y de los platos a servir, selección de imágenes coherentes con la identidad del restaurante, desarrollo de un menú que informe al cliente cómo se elabora cada plato de tapas, e inclusión de un botón para realizar reservas en el restaurante.',
             images: [
-                'img/editorial/menu-digital.jpg'
+                'img/menu/ideamuch.png'
             ],
-            pdfUrl: 'https://drive.google.com/file/d/MENU_DIGITAL_PDF_ID/preview'
+            pdfUrl: 'https://drive.google.com/file/d/14rTEEShni_J2DE2KUD_LF9noLFsI--Tu/preview'
         },
         'revista-digital': {
             title: 'Revista Digital',
@@ -272,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function() {
             images: [
                 'img/editorial/revista-digital.jpg'
             ],
-            pdfUrl: 'https://drive.google.com/file/d/REVISTA_DIGITAL_PDF_ID/preview'
+            pdfUrl: 'https://drive.google.com/file/d/1jXt23QzmH_rLlU9EukSRtTtoQIlrBA_n/preview'
         },
         'portada-libro': {
             title: 'Portada de Libro',
@@ -449,7 +450,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 </a>
             </div>
         ` : '';
-        
+        let websiteHTML = project.websiteUrl ? `
+            <div class="project-figma-link">
+                <a href="${project.websiteUrl}" target="_blank" class="btn-website">
+                    <i class="bi bi-globe"></i>
+                    Ir a Página
+                </a>
+            </div>
+        ` : '';
         let solutionHTML = project.solution ? `
             <div class="project-info-section">
                 <h4><i class="bi bi-check-circle-fill"></i> Solución</h4>
@@ -501,6 +509,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 
                 ${figmaHTML}
+                ${websiteHTML}  
                 
                 <div class="project-info-section">
                     <h4><i class="bi bi-lightning-charge-fill"></i> Desafío</h4>
@@ -522,7 +531,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ${pdfHTML}
             </div>
         `;
-        
+                
         // Agregar click en imágenes para ampliar
         modalContent.querySelectorAll('.project-gallery img, .photos-grid img').forEach(img => {
             img.addEventListener('click', function() {
