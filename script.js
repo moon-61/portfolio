@@ -286,7 +286,7 @@ document.addEventListener('DOMContentLoaded', function() {
             challenge: 'Transmitir el contenido del libro a través de una ilustración.',
             solution: 'Desarrollo de una portada tras pruebas de color y diálogo con el cliente. Diseño que une tapa y contratapa. Estilo que combina lo minimalista y lo artístico mediante el uso de texturas.',
             images: [
-                'img/editorial/portada'
+                'img/editorial/portada.jpg'
             ],
             pdfUrl: null
         },
