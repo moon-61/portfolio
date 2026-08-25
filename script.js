@@ -1068,7 +1068,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                         '<strong>Identidad Visual — Open Finance Bolivia Summit 2026:</strong> desarrollo del sistema visual integral del evento MC4 × Sensedia, aplicado a redes sociales, correo electrónico, presentaciones y material físico. Se trabajó con un sistema de componentes compartidos en Figma y una integración de las identidades visuales de ambas empresas.',
 
-                        '<strong>Identidad de Marca "d10" — Rebranding de UniColegios:</strong> desarrollo de la identidad visual completa para el rebranding de UniColegios, orientado a ampliar el alcance del producto más allá del sector educativo. El proyecto incluyó exploración conceptual, desarrollo de isologo, tipografía personalizada y sistema cromático. La identidad fue aprobada internamente y presentada favorablemente al Banco BISA.'
+                        '<strong>Identidad de Marca "d10" — Rebranding de UniColegios:</strong> desarrollo de la identidad visual completa para el nuevo sistema de pagos de MC4, orientado a ampliar el alcance del producto más allá del sector educativo. El proyecto incluyó exploración conceptual, desarrollo de isologo, tipografía personalizada y sistema cromático. La identidad fue aprobada internamente y presentada favorablemente al Banco.'
                     ]
                 }
 
