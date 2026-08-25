@@ -598,6 +598,101 @@ body {
     color: var(--color-purple-dark);
 }
 
+/* --- Proyectos Destacados: fichas tipo journal, no lista de texto --- */
+
+.timeline-subheading {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-purple-dark);
+    margin-top: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.timeline-subheading::before {
+    content: "";
+    width: 20px;
+    height: 3px;
+    border-radius: 10px;
+    background: var(--color-orange);
+    flex-shrink: 0;
+}
+
+.timeline-tasks.timeline-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.timeline-highlights li {
+    position: relative;
+    padding: 20px 18px 18px;
+    background: var(--color-white);
+    border: 2px dashed var(--color-green);
+    border-radius: 16px;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--color-gray);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-style 0.3s ease;
+}
+
+.timeline-highlights li::before {
+    content: none;
+}
+
+.timeline-highlights li:nth-child(odd) {
+    transform: rotate(-1.2deg);
+}
+
+.timeline-highlights li:nth-child(even) {
+    transform: rotate(1.2deg);
+    border-color: var(--color-purple);
+}
+
+.timeline-highlights li:hover {
+    transform: translateY(-4px) rotate(0deg);
+    border-style: solid;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.timeline-highlights li::after {
+    content: "\f415";
+    font-family: "bootstrap-icons";
+    position: absolute;
+    top: -12px;
+    left: 18px;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    color: white;
+    background: var(--color-orange);
+    border-radius: 50%;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-highlights li:nth-child(even)::after {
+    background: var(--color-purple-dark);
+}
+
+.timeline-highlights li strong {
+    display: block;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
 /* --- Formación Complementaria --- */
 
 .formation-platform {
@@ -1371,6 +1466,10 @@ body {
         gap: 30px;
     }
     
+    .timeline-tasks.timeline-highlights {
+        grid-template-columns: 1fr;
+    }
+    
     .about-decoration-1,
     .about-decoration-2 {
         display: none;
@@ -1457,6 +1556,14 @@ body {
     
     .contact-method {
         width: 100%;
+    }
+    
+    .timeline-highlights li {
+        transform: none !important;
+    }
+    
+    .timeline-highlights li:hover {
+        transform: translateY(-3px) !important;
     }
 }
 
