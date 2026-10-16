@@ -209,54 +209,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // ===================================
-    // PORTFOLIO FILTERS
-    // ===================================
-
-    const filterButtons =
-        document.querySelectorAll('.filter-btn');
-
-    const portfolioItems =
-        document.querySelectorAll('.portfolio-item');
-
-    filterButtons.forEach(button => {
-
-        button.addEventListener('click', function () {
-
-            const filter =
-                this.getAttribute('data-filter');
-
-            filterButtons.forEach(btn => {
-                btn.classList.remove('active');
-            });
-
-            this.classList.add('active');
-
-            portfolioItems.forEach(item => {
-
-                const category =
-                    item.getAttribute('data-category');
-
-                if (
-                    filter === 'all' ||
-                    category === filter
-                ) {
-                    item.classList.remove('hidden');
-
-                    // Reiniciar animación visual si AOS está disponible
-                    item.classList.remove('aos-animate');
-
-                    requestAnimationFrame(() => {
-                        item.classList.add('aos-animate');
-                    });
-
-                } else {
-                    item.classList.add('hidden');
-                }
-            });
-        });
-    });
-
-    // ===================================
     // DATOS DE LOS PROYECTOS
     // ===================================
 
@@ -268,14 +220,60 @@ document.addEventListener('DOMContentLoaded', function () {
 
             tools: [
                 { name: 'Figma', icon: 'palette' },
-                { name: 'Prototipado', icon: 'bezier2' }
+                { name: 'Unity', icon: 'controller' },
+                { name: 'Arduino', icon: 'cpu' }
             ],
 
-            challenge:
-                'Comunicar cuándo los movimientos repetitivos requieren una pausa mediante una experiencia móvil clara.',
-
-            solution:
-                'Diseño de una experiencia móvil que comunica el nivel de movimientos repetitivos y da feedback para que la persona pueda tomar una pausa.',
+            sections: [
+                {
+                    title: 'Ficha del proyecto',
+                    icon: 'info-circle-fill',
+                    body: 'Proyecto académico en PUC-SP, São Paulo. Febrero–abril de 2025; dos meses en total: un mes de investigación y cuatro semanas de desarrollo. Éramos cuatro personas. Me encargué de desarrollar la aplicación en Unity, crear las animaciones y transferir el prototipo de Figma a Unity. Mis compañeras desarrollaron el hardware y la programación en Arduino.'
+                },
+                {
+                    title: 'El problema',
+                    icon: 'heart-pulse',
+                    body: 'El síndrome del túnel carpiano es una compresión del nervio mediano en la muñeca. Puede desarrollarse lentamente y pasar inadvertido hasta que el dolor se vuelve constante. Afecta especialmente a quienes realizan movimientos repetitivos durante muchas horas, como digitadores, cajeros, costureras y trabajadores de producción. La falta de pausas es un factor de riesgo importante en las lesiones por esfuerzo repetitivo.'
+                },
+                {
+                    title: 'Investigación',
+                    icon: 'search',
+                    body: 'Revisamos fuentes brasileñas de salud y entrevistamos a tres fisioterapeutas. Un estudio con 200 trabajadores hospitalarios reportó que el 34% tenía el síndrome confirmado por ultrasonido. Uno de los artículos citaba datos del INSS según los cuales las LER/DORT son la segunda causa de licencia laboral en Brasil.',
+                    items: [
+                        'Las fisioterapeutas señalaron que el daño no depende solo de la cantidad de movimientos: también importan la duración del esfuerzo sostenido y la presión.',
+                        'El riesgo está relacionado con la costumbre de no hacer pausas. Por eso, la solución debía considerar el tiempo de esfuerzo, no limitarse a mostrar un aviso genérico para descansar.'
+                    ]
+                },
+                {
+                    title: 'La solución',
+                    icon: 'lightbulb-fill',
+                    body: 'Muva es un guante conectado a una aplicación móvil. Incluye un sensor de presión en la base de la mano y otro de flexión sobre la muñeca, donde pasa el nervio mediano. La persona inicia una sesión en la aplicación y elige una actividad: diseñar o programar. El sistema registra el esfuerzo sostenido y, tras un periodo prolongado —por ejemplo, 45 minutos—, avisa que es momento de descansar y ofrece ejercicios de movilidad para la mano.',
+                    items: [
+                        'La aplicación también incluye una guía de uso antes de la primera sesión y una sección informativa con señales de alerta del síndrome.',
+                        'La vibración no se usa para dar masajes: quedó únicamente como aviso discreto de concentración prolongada, para notificar sin obligar a mirar el celular.',
+                        'Muva es una herramienta de prevención y aviso temprano; no reemplaza la atención de un fisioterapeuta ni de un médico.'
+                    ]
+                },
+                {
+                    title: 'Decisiones de diseño',
+                    icon: 'palette-fill',
+                    body: 'Diseñé la interfaz con un tono médico y tranquilo, una paleta de azules y colores pastel, tipografías sans serif modernas y pocos elementos decorativos. La pantalla de inicio muestra las actividades recientes para facilitar el comienzo de una sesión y mantiene siempre visible el acceso a la información. Durante el desarrollo definí animaciones suaves e iconografía médica.'
+                },
+                {
+                    title: 'Materiales, resultados y límites',
+                    icon: 'clipboard-check-fill',
+                    body: 'La propuesta contempla un guante de poliéster con un bolsillo para extraer el sistema interno y poder lavarlo. Para el prototipo y la demostración usamos lana; su apariencia no representaba bien el material final y los profesores observaron que no parecía un guante. A partir de ese feedback investigamos telas más adecuadas para el uso prolongado.',
+                    items: [
+                        'Los profesores valoraron positivamente el funcionamiento del código y los sensores, e indicaron que la interfaz necesitaba más trabajo.',
+                        'Probamos el prototipo con una persona durante una semana. Funcionó, pero no hubo tiempo para medir resultados a largo plazo.'
+                    ]
+                },
+                {
+                    title: 'Lo que aprendí',
+                    icon: 'mortarboard-fill',
+                    body: 'Aprendí a trabajar con hardware y software en paralelo, y a evaluar una idea desde la experiencia física de quien la usa. Descartar la vibración como masaje fue la decisión más importante: la investigación cambió la solución. También confirmé que la interfaz necesita el mismo cuidado que la electrónica.'
+                }
+            ],
 
             figmaUrl:
                 'https://www.figma.com/proto/U557GDsN1lSie3KG0nPnj5/Wireframes?node-id=41-80&p=f&t=YpY6oa1gMBWKGaBU-1&scaling=contain&content-scaling=fixed&page-id=0%3A1'
@@ -313,7 +311,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 'Diseñar y desarrollar un sitio web con contenido y recursos para personas que comienzan en diseño.',
 
             solution:
-                'Sitio web responsive con un blog, buscador de tutoriales y galería de artículos de diseño.'
+                'Sitio web responsive con un blog, buscador de tutoriales y galería de artículos de diseño.',
+
+            repositoryUrl:
+                'https://github.com/moon-61/moonclouday'
         },
 
     };
@@ -501,6 +502,22 @@ document.addEventListener('DOMContentLoaded', function () {
                 `
                 : '';
 
+        const repositoryHTML =
+            project.repositoryUrl
+                ? `
+                    <div class="project-figma-link">
+                        <a
+                            href="${escapeAttribute(project.repositoryUrl)}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn-website">
+                            <i class="bi bi-github"></i>
+                            Ver repositorio en GitHub
+                        </a>
+                    </div>
+                `
+                : '';
+
         const solutionHTML =
             project.solution
                 ? `
@@ -590,13 +607,53 @@ document.addEventListener('DOMContentLoaded', function () {
                 `
                 : '';
 
+        const projectSectionsHTML =
+            Array.isArray(project.sections)
+                ? project.sections.map(section => {
+                    const itemsHTML =
+                        Array.isArray(section.items) && section.items.length
+                            ? `<ul>${section.items.map(item => `<li>${escapeHTML(item)}</li>`).join('')}</ul>`
+                            : '';
+
+                    const bodyHTML =
+                        section.body
+                            ? `<p>${escapeHTML(section.body)}</p>`
+                            : '';
+
+                    return `
+                        <section class="project-info-section">
+                            <h4>
+                                <i class="bi bi-${escapeHTML(section.icon)}"></i>
+                                ${escapeHTML(section.title)}
+                            </h4>
+                            ${bodyHTML}
+                            ${itemsHTML}
+                        </section>
+                    `;
+                }).join('')
+                : '';
+
+        const projectOverviewHTML =
+            projectSectionsHTML
+                ? projectSectionsHTML
+                : `
+                    <div class="project-info-section">
+                        <h4>
+                            <i class="bi bi-lightning-charge-fill"></i>
+                            Desafío
+                        </h4>
+                        <p>${escapeHTML(project.challenge || '')}</p>
+                    </div>
+                    ${solutionHTML}
+                `;
+
         modalContent.innerHTML = `
 
             <div class="project-detail">
 
                 <div class="project-detail-header">
 
-                    <h2 class="project-detail-title">
+                    <h2 class="project-detail-title" id="projectModalLabel">
                         ${escapeHTML(project.title)}
                     </h2>
 
@@ -612,21 +669,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 ${figmaHTML}
                 ${websiteHTML}
+                ${repositoryHTML}
 
-                <div class="project-info-section">
-
-                    <h4>
-                        <i class="bi bi-lightning-charge-fill"></i>
-                        Desafío
-                    </h4>
-
-                    <p>
-                        ${escapeHTML(project.challenge || '')}
-                    </p>
-
-                </div>
-
-                ${solutionHTML}
+                ${projectOverviewHTML}
 
                 ${
                     imagesHTML
