@@ -438,10 +438,8 @@ document.addEventListener('DOMContentLoaded', function () {
             ],
 
             websiteUrl:
-                'https://moon-61.github.io/moonclouday/html/home-ES.html',
+                'https://moon-61.github.io/moonclouday/html/home-ES.html'
 
-            repositoryUrl:
-                'https://github.com/moon-61/moonclouday'
         },
 
     };
@@ -620,8 +618,8 @@ document.addEventListener('DOMContentLoaded', function () {
                             rel="noopener noreferrer"
                             class="btn-website">
 
-                            <i class="bi bi-globe"></i>
-                            Ir a Página
+                            <i class="bi bi-github"></i>
+                            Ver sitio publicado en GitHub Pages
 
                         </a>
 
