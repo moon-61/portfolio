@@ -375,19 +375,70 @@ document.addEventListener('DOMContentLoaded', function () {
 
         moonclouday: {
             title: 'MoonClouday',
-            category: 'Desarrollo Web',
+            category: 'Diseño y desarrollo frontend',
 
             tools: [
-                { name: 'VS Code', icon: 'code-slash' },
-                { name: 'GitHub', icon: 'github' },
-                { name: 'Bootstrap', icon: 'bootstrap' }
+                { name: 'HTML', text: 'HTML' },
+                { name: 'CSS', text: 'CSS' },
+                { name: 'JavaScript', text: 'JS' },
+                { name: 'Bootstrap', icon: 'bootstrap' },
+                { name: 'GitHub Pages', icon: 'github' }
             ],
 
-            challenge:
-                'Diseñar y desarrollar un sitio web con contenido y recursos para personas que comienzan en diseño.',
+            sections: [
+                {
+                    title: 'Ficha del proyecto',
+                    icon: 'info-circle-fill',
+                    body: 'Proyecto personal creado durante mi intercambio académico en PUC-SP, São Paulo, en 2025. Lo diseñé y desarrollé de forma individual con HTML, CSS, JavaScript, Bootstrap y GitHub Pages, usando herramientas de IA como apoyo para consultar y resolver dudas. La duración estimada es de octubre a noviembre de 2025 y está por confirmar.'
+                },
+                {
+                    title: 'El reto: encontrar una dirección',
+                    icon: 'compass-fill',
+                    body: 'La idea comenzó cuando un amigo de mi primer grupo me sugirió escribir un blog sobre mi experiencia en Brasil. Al intentar definir su identidad visual, exploré cuatro direcciones: una estética indie retro de los años 90, una propuesta corporativa, una inspirada en un cuaderno de notas y una opción más estándar que no terminaba de convencerme. En las entregas semanales me costaba justificar por qué debía elegir una sobre las demás.'
+                },
+                {
+                    title: 'Feedback y cambio de enfoque',
+                    icon: 'chat-square-text-fill',
+                    body: 'Al presentar las primeras tres versiones, recibí opiniones como “me gusta la A” o “prefiero la C”, sin explicar las razones. Aprendí que una preferencia aislada no basta como feedback de diseño: es más útil saber qué funciona, qué no y por qué. Las observaciones de los profesores sobre los aciertos y problemas de cada propuesta me ayudaron a dejar de buscar una versión perfecta y combinar lo mejor de varias direcciones.',
+                    items: [
+                        'El concepto evolucionó de un blog a un sitio personal que muestra mis proyectos, mi proceso y mis aprendizajes.',
+                        'Quise compartir también errores, bloqueos y soluciones para que otros estudiantes que se sienten perdidos pudieran reconocer un proceso real.'
+                    ]
+                },
+                {
+                    title: 'La solución',
+                    icon: 'lightbulb-fill',
+                    body: 'MoonClouday es un sitio personal con cuatro secciones principales: Inicio, Sobre mí, Blog y Contacto. También reúne páginas de proyectos —“Detrás de escena”—, trucos de diseño y novedades. Está disponible en español, portugués e inglés.',
+                    items: [
+                        'El blog funciona como un diario mensual del intercambio, de febrero a octubre de 2025. Cada entrada incluye una imagen, un resumen y el tiempo de lectura.',
+                        'La página de proyectos reúne cuatro trabajos: Muva, Loopi, Treevo y el propio MoonClouday.',
+                        'La portada ofrece tarjetas de acceso directo a los contenidos principales.'
+                    ]
+                },
+                {
+                    title: 'Decisiones de diseño y desarrollo',
+                    icon: 'palette-fill',
+                    body: 'La identidad combina referencias retro de los años 90, stickers y detalles personales con una estructura pensada para mantener la legibilidad. Bakugo aparece como un motivo recurrente y una elección consciente para expresar la energía con la que quería trabajar.',
+                    items: [
+                        'Diseñé una navegación sencilla y una estructura adaptable a distintos tamaños de pantalla desde una misma base de código.',
+                        'Organicé tarjetas, encabezados y botones con clases reutilizables de Bootstrap y CSS propio.',
+                        'Planifiqué el contenido en español, portugués e inglés, considerando desde el inicio cómo se organiza y presenta en cada idioma.'
+                    ]
+                },
+                {
+                    title: 'Resultado y alcance actual',
+                    icon: 'globe',
+                    body: 'El sitio está publicado en GitHub Pages. Algunas entradas del blog, incluida la de noviembre, siguen pendientes y se muestran como “próximamente”; algunas páginas de proyectos también necesitan mejoras. El proyecto documenta una experiencia personal y un proceso de diseño y desarrollo, no un producto con métricas de uso.'
+                },
+                {
+                    title: 'Lo que aprendí',
+                    icon: 'mortarboard-fill',
+                    body: 'Aprendí que incluso un proyecto personal necesita criterio para elegir, justificar y cerrar una dirección visual. También practiqué recibir feedback de forma más útil y convertir críticas en decisiones concretas. La estructura del código y la organización del contenido en tres idiomas forman parte de la experiencia: el código también es una decisión de diseño.'
+                }
+            ],
 
-            solution:
-                'Sitio web responsive con un blog, buscador de tutoriales y galería de artículos de diseño.',
+            websiteUrl:
+                'https://moon-61.github.io/moonclouday/html/home-ES.html',
 
             repositoryUrl:
                 'https://github.com/moon-61/moonclouday'
