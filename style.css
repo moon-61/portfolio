@@ -918,20 +918,20 @@ section {
 
 .course-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
 }
 
 .course-item {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 15px;
     background: var(--color-light-gray);
     padding: 18px;
     border-radius: 15px;
     border: 2px solid transparent;
     transition: all 0.3s ease;
-    min-height: 130px;
+    min-height: 118px;
 }
 
 .course-item:hover {
@@ -1272,7 +1272,7 @@ section {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
     max-width: 1100px;
     margin: 0 auto;
@@ -1288,8 +1288,36 @@ section {
     border-radius: 22px;
     border: 3px dashed var(--color-purple);
     transition: all 0.3s ease;
-    text-align: center;
+    text-align: left;
     height: 100%;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tags span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 6px 10px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.82);
+    color: var(--color-dark);
+    font-family: 'Urbanist', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.skill-card .skill-icon {
+    margin-left: 0;
+}
+
+.skill-card h3 {
+    min-height: 2.5rem;
 }
 
 .skill-card:hover {
@@ -1424,47 +1452,78 @@ section {
 }
 
 .contact-wrapper {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .contact-card {
-    background: linear-gradient(
-        135deg,
-        var(--color-purple-dark),
-        var(--color-blue)
-    );
-    padding: 60px 50px;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 35px;
+    align-items: stretch;
+    padding: 28px;
     border-radius: 30px;
-    text-align: center;
+    background: white;
+    border: 3px dashed var(--color-purple);
+    box-shadow: var(--shadow-soft);
+}
+
+.contact-message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 18px;
+    padding: 32px;
+    border-radius: 22px;
     color: white;
-    position: relative;
-    overflow: hidden;
+    background: linear-gradient(135deg, var(--color-purple-dark), var(--color-blue));
 }
 
-.contact-title {
+.contact-kicker {
     font-family: 'Urbanist', sans-serif;
-    font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
-.contact-description {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    opacity: 0.95;
+.contact-message h3 {
+    font-family: 'Urbanist', sans-serif;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.contact-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-dark);
+    background: white;
+    border-radius: 50px;
+    padding: 13px 18px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.contact-email:hover {
+    color: var(--color-green-dark);
+    transform: translateY(-2px);
 }
 
 .contact-content {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
+    align-content: center;
     gap: 18px;
-    position: relative;
-    z-index: 2;
 }
 
 .contact-item {
-    background: white;
+    background: var(--color-light-gray);
     color: var(--color-dark);
     border-radius: 18px;
     padding: 18px;
@@ -1473,6 +1532,7 @@ section {
     gap: 15px;
     text-align: left;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .contact-item:hover {
@@ -1512,6 +1572,15 @@ section {
     font-weight: 800;
     text-decoration: none;
     word-break: break-word;
+}
+
+.contact-link-copy {
+    min-width: 0;
+}
+
+.contact-value i {
+    color: var(--color-purple-dark);
+    margin-left: 4px;
 }
 
 .contact-value:hover {
@@ -2005,11 +2074,19 @@ section {
     }
 
     .course-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
 @media (max-width: 991px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-card {
+        grid-template-columns: 1fr;
+    }
+
     .custom-navbar .nav-link {
         margin: 5px 0;
         text-align: center;
@@ -2137,11 +2214,12 @@ section {
     }
 
     .contact-card {
-        padding: 40px 25px;
+        padding: 18px;
+        gap: 18px;
     }
 
-    .contact-title {
-        font-size: 2rem;
+    .contact-message {
+        padding: 26px 22px;
     }
 
     .footer-section {
@@ -2239,7 +2317,7 @@ section {
     }
 
     .skills-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: 1fr;
         gap: 12px;
     }
 

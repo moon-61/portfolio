@@ -264,77 +264,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
         muva: {
             title: 'Muva',
-            category: 'UI/UX + Physical Computing',
-            type: 'Universidad',
+            category: 'UX/UI Design',
 
             tools: [
                 { name: 'Figma', icon: 'palette' },
-                { name: 'Unity', icon: 'controller' },
-                { name: 'Arduino', icon: 'cpu' },
-                { name: 'Photoshop', text: 'Ps' },
-                { name: 'Illustrator', text: 'Ai' }
+                { name: 'Prototipado', icon: 'bezier2' }
             ],
 
             challenge:
-                'Crear un guante equipado con sensores, proyectado para indicar al usuario la necesidad de una pausa tras movimientos repetitivos.',
+                'Comunicar cuándo los movimientos repetitivos requieren una pausa mediante una experiencia móvil clara.',
 
             solution:
-                'Desarrollamos Muva, un dispositivo wearable que integra hardware y software. El guante con sensores Arduino monitorea los movimientos repetitivos en tiempo real y proporciona feedback mediante una aplicación móvil diseñada en Figma y desarrollada en Unity, alertando al usuario cuando necesita tomar una pausa.',
-
-            images: [
-                'img/muva/electronica.png',
-                'img/muva/app2.jpg',
-                'img/muva/luva.jpg',
-                'img/muva/ensamblagem.jpg'
-            ],
-
-            pdfUrl:
-                'https://drive.google.com/file/d/1LKwEpHds_10BRXDb8e-OOD8iu_mFsVKR/preview',
+                'Diseño de una experiencia móvil que comunica el nivel de movimientos repetitivos y da feedback para que la persona pueda tomar una pausa.',
 
             figmaUrl:
                 'https://www.figma.com/proto/U557GDsN1lSie3KG0nPnj5/Wireframes?node-id=41-80&p=f&t=YpY6oa1gMBWKGaBU-1&scaling=contain&content-scaling=fixed&page-id=0%3A1'
         },
 
-        loopi: {
-            title: 'Loopi',
-            category: 'Diseño de Producto',
-            type: 'Universidad',
-
-            tools: [
-                { name: 'AutoCAD', text: 'CAD' },
-                { name: 'Inventor', text: 'Inv' },
-                { name: 'Illustrator', text: 'Ai' },
-                { name: 'Photoshop', text: 'Ps' },
-                { name: 'Gemini AI', icon: 'stars' }
-            ],
-
-            challenge:
-                'Crear un sistema de mobiliario educativo modular que se adapte a diferentes actividades de aprendizaje y edades.',
-
-            solution:
-                'Loopi es un sistema de sillas modulares diseñadas con AutoCAD e Inventor que permite configuraciones flexibles para espacios educativos modernos, promoviendo la creatividad y colaboración.',
-
-            images: [
-                'img/loopi/prototipo.jpg',
-                'img/loopi/otroprotoripo.jpg',
-                'img/loopi/medidas.jpg',
-                'img/loopi/final.jpg'
-            ],
-
-            pdfUrl:
-                'https://drive.google.com/file/d/1GXa45a0WtGb7hsoI67IQmeRcbYsarwFE/preview'
-        },
-
         treevo: {
             title: 'Treevo',
             category: 'UI/UX Design',
-            type: 'Universidad',
 
             tools: [
-                { name: 'Figma', icon: 'palette' },
-                { name: 'After Effects', text: 'Ae' },
-                { name: 'Illustrator', text: 'Ai' },
-                { name: 'Photoshop', text: 'Ps' }
+                { name: 'Figma', icon: 'palette' }
             ],
 
             challenge:
@@ -343,16 +295,6 @@ document.addEventListener('DOMContentLoaded', function () {
             solution:
                 'Aplicación interactiva y social que informa sobre el reciclaje, incentiva la competencia amistosa entre usuarios y amigos para ver quién recicla más, e informa cuándo pasará el camión de reciclaje por la calle del usuario.',
 
-            images: [
-                'img/treevo/wireframes.jpg',
-                'img/treevo/componentes.jpg',
-                'img/treevo/treevo.jpg',
-                'img/treevo/exploracion.jpg'
-            ],
-
-            pdfUrl:
-                'https://drive.google.com/file/d/1f3MV1CTnPrR7iEAH1xSsRVKB-WnHjdYE/preview',
-
             figmaUrl:
                 'https://www.figma.com/proto/PLRp9d0Debb2SpX4chcrsb/Treevo?page-id=0%3A1&node-id=1069-511&p=f&viewport=-891%2C1044%2C0.31&t=mSiBQdtJxyJWx0GT-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1069%3A511'
         },
@@ -360,276 +302,20 @@ document.addEventListener('DOMContentLoaded', function () {
         moonclouday: {
             title: 'MoonClouday',
             category: 'Desarrollo Web',
-            type: 'Personal',
 
             tools: [
                 { name: 'VS Code', icon: 'code-slash' },
                 { name: 'GitHub', icon: 'github' },
-                { name: 'Bootstrap', icon: 'bootstrap' },
-                { name: 'Photoshop', text: 'Ps' },
-                { name: 'Illustrator', text: 'Ai' }
+                { name: 'Bootstrap', icon: 'bootstrap' }
             ],
 
             challenge:
-                'Crear una página web personal.',
+                'Diseñar y desarrollar un sitio web con contenido y recursos para personas que comienzan en diseño.',
 
             solution:
-                'Página web dirigida a diseñadores principiantes o que están iniciando la carrera de diseño. Incluye blog personal, buscador de tutoriales y galería de artículos de diseño.',
-
-            images: [
-                'img/moon/notas3.jpg',
-                'img/moon/notas4.jpg',
-                'img/moon/figma.jpg',
-                'img/moon/CODIGO.jpg'
-            ],
-
-            pdfUrl: null,
-
-            websiteUrl:
-                'https://moon-61.github.io/moonclouday/html/home-ES.html'
+                'Sitio web responsive con un blog, buscador de tutoriales y galería de artículos de diseño.'
         },
 
-        'menu-digital': {
-            title: 'Menú Digital',
-            category: 'Editorial',
-            type: 'Universidad',
-
-            tools: [
-                { name: 'InDesign', text: 'Id' },
-                { name: 'Illustrator', text: 'Ai' }
-            ],
-
-            challenge:
-                'Crear un menú digital interactivo para un restaurante ficticio de tapas españolas.',
-
-            solution:
-                'Creación de una identidad visual para el restaurante, investigación del menú y de los platos a servir, selección de imágenes coherentes con la identidad del restaurante, desarrollo de un menú que informe al cliente cómo se elabora cada plato de tapas, e inclusión de un botón para realizar reservas en el restaurante.',
-
-            images: [
-                'img/editorial/ideamuch.png'
-            ],
-
-            pdfUrl:
-                'https://drive.google.com/file/d/14rTEEShni_J2DE2KUD_LF9noLFsI--Tu/preview'
-        },
-
-        'revista-digital': {
-            title: 'Revista Digital',
-            category: 'Editorial',
-            type: 'Universidad',
-
-            tools: [
-                { name: 'Canva', icon: 'palette' }
-            ],
-
-            challenge:
-                'Crear una revista digital de moda.',
-
-            solution:
-                'Pieza editorial interactiva para tablet enfocada en moda urbana. Contiene videos, tips según el tipo de cuerpo, hipervínculos a perfiles de influencers y ubicaciones donde encontrar ropa de buena calidad a bajo costo.',
-
-            images: [
-                'img/editorial/portadarevista.jpg'
-            ],
-
-            pdfUrl:
-                'https://drive.google.com/file/d/1jXt23QzmH_rLlU9EukSRtTtoQIlrBA_n/preview'
-        },
-
-        'portada-libro': {
-            title: 'Portada de Libro',
-            category: 'Editorial',
-            type: 'Personal',
-
-            tools: [
-                { name: 'Krita', text: 'Kr' },
-                { name: 'Affinity', text: 'Af' }
-            ],
-
-            challenge:
-                'Transmitir el contenido del libro a través de una ilustración.',
-
-            solution:
-                'Desarrollo de una portada tras pruebas de color y diálogo con el cliente. Diseño que une tapa y contratapa. Estilo que combina lo minimalista y lo artístico mediante el uso de texturas.',
-
-            images: [
-                'img/editorial/portada.jpg'
-            ],
-
-            pdfUrl: null
-        },
-
-        'poster-1': {
-            title: 'Póster Creativo 1',
-            category: 'Poster',
-            type: 'Personal',
-
-            tools: [
-                { name: 'Illustrator', text: 'Ai' },
-                { name: 'Photoshop', text: 'Ps' }
-            ],
-
-            challenge:
-                'Dar a conocer una palabra costumbrista cruceña a un público extranjero.',
-
-            solution:
-                'Afiche tipográfico digital con pequeñas ilustraciones hechas a mano.',
-
-            images: [
-                'img/posters/horneao.jpg'
-            ],
-
-            pdfUrl: null
-        },
-
-        'poster-2': {
-            title: "It's Cheruche Time",
-            category: 'Poster',
-            type: 'Personal',
-
-            tools: [
-                { name: 'Illustrator', text: 'Ai' },
-                { name: 'Photoshop', text: 'Ps' }
-            ],
-
-            challenge:
-                'Mezclar un elemento globalizado con un elemento tradicional cruceño.',
-
-            solution:
-                'Experimentación de texturas y tipografías en un único afiche digital.',
-
-            images: [
-                'img/posters/cheruje.jpg'
-            ],
-
-            pdfUrl: null
-        },
-
-        'poster-3': {
-            title: 'Póster Creativo 3',
-            category: 'Poster',
-            type: 'Personal',
-
-            tools: [
-                { name: 'Illustrator', text: 'Ai' },
-                { name: 'Photoshop', text: 'Ps' }
-            ],
-
-            challenge:
-                'Informar sobre el nombre coloquial o costumbrista que reciben las cigarras en Santa Cruz de la Sierra.',
-
-            solution:
-                'Afiche digital que experimenta con tipografía, jerarquía visual, formas y textura de imagen.',
-
-            images: [
-                'img/posters/cuco.jpg'
-            ],
-
-            pdfUrl: null
-        },
-
-        'ilustracion-digital': {
-            title: 'Ilustración Digital',
-            category: 'Ilustración',
-            type: 'Universidad',
-
-            tools: [
-                { name: 'Krita', text: 'Kr' },
-                { name: 'Photoshop', text: 'Ps' }
-            ],
-
-            challenge:
-                'Dar una nueva reinterpretación a El Principito.',
-
-            solution:
-                'Ilustración digital con textura de crayón. Estilo realista del personaje, utilizando el crayón como recurso visual asociado a lo infantil.',
-
-            images: [
-                'img/posters/elprincipito.png'
-            ],
-
-            pdfUrl: null
-        },
-
-        'doc-audiovisual': {
-            title: 'Documentación Audiovisual',
-            category: 'Audiovisual',
-            type: 'Universidad',
-
-            tools: [
-                { name: 'After Effects', text: 'Ae' },
-                { name: 'Photoshop', text: 'Ps' }
-            ],
-
-            challenge:
-                'Documentar mediante fotografía y video el pueblo de San José de Chiquitos, Santa Cruz, Bolivia.',
-
-            solution: null,
-
-            images: [],
-
-            videos: [
-                'img/documentacion/videos.mp4'
-            ],
-
-            photos: [
-                'img/documentacion/foto1.jpg',
-                'img/documentacion/foto2.jpg',
-                'img/documentacion/foto3.jpg'
-            ],
-
-            pdfUrl: null
-        },
-
-        'poster-historias': {
-            title: 'Póster Digital + Historias Instagram',
-            category: 'Poster + Social Media',
-            type: 'Universidad',
-
-            tools: [
-                { name: 'Illustrator', text: 'Ai' },
-                { name: 'Photoshop', text: 'Ps' }
-            ],
-
-            challenge:
-                'Dar una nueva imagen a las publicaciones de una banda alternativa pequeña de Santa Cruz de la Sierra.',
-
-            solution:
-                'Desarrollo de un póster digital y creación de un conjunto de historias de Instagram animadas. Proceso basado en brief inicial y entrevistas a los músicos para definir el mensaje a transmitir.',
-
-            images: [
-                'img/posters/Rebis.gif',
-                'img/posters/Rebis1.gif',
-                'img/posters/Rebis2.gif'
-            ],
-
-            pdfUrl: null
-        },
-
-        boheme: {
-            title: 'Bohemé - Identidad Visual',
-            category: 'Identidad Visual',
-            type: 'Universidad',
-
-            tools: [
-                { name: 'Illustrator', text: 'Ai' }
-            ],
-
-            challenge:
-                'Desarrollar una marca ficticia.',
-
-            solution:
-                'Conceptualización de una cafetería innovadora y maximalista. Marca llena de color y energía. Desarrollo completo de su identidad visual.',
-
-            images: [
-                'img/identidad/folleto.jpg',
-                'img/identidad/gafetes.jpg',
-                'img/identidad/stickers.jpg',
-                'img/identidad/tarjetas.jpg'
-            ],
-
-            pdfUrl: null
-        }
     };
 
     // ===================================
@@ -904,11 +590,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 `
                 : '';
 
-        const typeIcon =
-            project.type === 'Universidad'
-                ? 'mortarboard-fill'
-                : 'person-fill';
-
         modalContent.innerHTML = `
 
             <div class="project-detail">
@@ -926,14 +607,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="project-detail-tools">
                         ${toolsHTML}
                     </div>
-
-                    <span class="project-detail-type">
-
-                        <i class="bi bi-${typeIcon}"></i>
-
-                        ${escapeHTML(project.type)}
-
-                    </span>
 
                 </div>
 
@@ -1009,66 +682,55 @@ document.addEventListener('DOMContentLoaded', function () {
                 'MC4 SRL — Bolivia',
 
             period:
-                '2026 – Actualidad · Pasantía hasta diciembre de 2026',
+                'Febrero de 2026 – Actualidad',
 
             area:
                 'Diseño Digital / UX/UI',
 
             summary:
-                'Participación en proyectos de diseño digital orientados a soluciones tecnológicas, FinTech y servicios para el sector financiero y corporativo, trabajando de manera colaborativa en comunicación visual, identidad de marca, diseño UX/UI y desarrollo de recursos para productos y eventos corporativos.',
+                'En MC4, diseñé experiencias e interfaces para productos digitales financieros y corporativos. Mi trabajo abarcó el análisis del negocio, la arquitectura de información, el prototipado y la colaboración con desarrollo.',
 
             sections: [
 
                 {
-                    title: 'Comunicación Visual',
-                    icon: 'bi-megaphone-fill',
+                    title: 'Investigación y arquitectura de información',
+                    icon: 'bi-search',
                     items: [
-                        'Diseño de contenido y piezas de comunicación para LinkedIn y redes sociales corporativas',
-                        'Diseño de banners y material gráfico para eventos',
-                        'Desarrollo de presentaciones institucionales y corporativas',
-                        'Creación de currículums y credenciales corporativas',
-                        'Desarrollo creativo y conceptual de propuestas gráficas',
-                        'Adaptación y rediseño de piezas corporativas bajo lineamientos de marca'
+                        'Analicé el mercado y la empresa para comprender su misión, visión, objetivos y necesidades.',
+                        'Definí la arquitectura de información, las pantallas y la agrupación de módulos según los requerimientos del sistema.',
+                        'Apliqué criterios de WCAG, design systems, consistencia, feedback y aislamiento según el producto y el negocio.'
                     ]
                 },
 
                 {
-                    title: 'Identidad Visual y Branding',
-                    icon: 'bi-palette-fill',
-                    items: [
-                        'Creación de identidades visuales para nuevos productos y servicios digitales',
-                        'Desarrollo de sistemas visuales y adaptación de identidades a diferentes formatos y canales',
-                        'Participación en procesos de rebranding y construcción de identidad de marca',
-                        'Desarrollo de componentes visuales y sistemas gráficos en Figma',
-                        'Aplicación de criterios de color, tipografía, composición, jerarquía visual y consistencia de marca'
-                    ]
-                },
-
-                {
-                    title: 'UX/UI y Diseño Digital',
+                    title: 'Diseño UX/UI y prototipado',
                     icon: 'bi-phone-fill',
                     items: [
-                        'Diseño de experiencias e interfaces de usuario (UX/UI)',
-                        'Diseño de landing pages en Figma',
-                        'Creación de wireframes y propuestas de interfaces digitales',
-                        'Desarrollo de sistemas visuales, paletas de color y mejoras de interfaz',
-                        'Creación de prototipos y documentación de interfaces',
-                        'Aplicación de criterios de usabilidad, jerarquía visual y consistencia en productos digitales',
-                        'Uso de Figma para diseño, prototipado, creación de componentes y documentación'
+                        'Diseñé flujos, pantallas, componentes y diagramas para presentar y validar soluciones antes del desarrollo.',
+                        'Creé prototipos interactivos de baja, media y alta fidelidad, incorporando la identidad visual de cada marca.',
+                        'Diseñé un onboarding financiero con lógica condicional para perfilar usuarios, validar identidad y realizar verificación biométrica.',
+                        'Diseñé pantallas para una aplicación web interna que reemplaza procesos manuales en Excel, con tablas complejas, filtros, escenarios y estados de aprobación.'
                     ]
                 },
 
                 {
-                    title: 'Proyectos Destacados',
+                    title: 'Colaboración con desarrollo',
+                    icon: 'bi-code-slash',
+                    items: [
+                        'Colaboré con desarrollo en la implementación de componentes dinámicos con React, Angular y TypeScript.',
+                        'Utilicé herramientas de IA como apoyo para convertir propuestas de diseño en interfaces funcionales.',
+                        'Fundamenté mis decisiones de diseño con patrones enterprise, WCAG y design systems ante QA, desarrollo y clientes.'
+                    ]
+                },
+
+                {
+                    title: 'Aportes',
                     icon: 'bi-stars',
                     items: [
-                        '<strong>Carrusel de Niveles de Adopción de la IA — MC4 × Platzi:</strong> desarrollo conceptual y visual de una pieza de seis láminas para LinkedIn, orientada a posicionar a MC4 dentro del ecosistema de inteligencia artificial y generar interés en el programa ejecutivo MC4 × Platzi. La pieza obtuvo una recepción notable tras su publicación.',
-
-                        '<strong>Diseño UX/UI para onboarding de servicio bancario:</strong> diseño y mejora de pantallas para el proceso de onboarding de un servicio bancario, tomando decisiones orientadas a optimizar la experiencia de usuario. Participación en la implementación de mejoras, gestión de correcciones y ajustes de las interfaces, incorporando continuamente el feedback del cliente (banco) para perfeccionar la solución final.',
-
-                        '<strong>Identidad Visual — Open Finance Bolivia Summit 2026:</strong> desarrollo del sistema visual integral del evento MC4 × Sensedia, aplicado a redes sociales, correo electrónico, presentaciones y material físico. Se trabajó con un sistema de componentes compartidos en Figma y una integración de las identidades visuales de ambas empresas.',
-
-                        '<strong>Identidad de Marca "d10" — Rebranding de UniColegios:</strong> desarrollo de la identidad visual completa para el nuevo sistema de pagos de MC4, orientado a ampliar el alcance del producto más allá del sector educativo. El proyecto incluyó exploración conceptual, desarrollo de isologo, tipografía personalizada y sistema cromático. La identidad fue aprobada internamente y presentada favorablemente al Banco.'
+                        'Mejoré el look and feel y adapté la experiencia de usuario a las necesidades de cada cliente.',
+                        'Creé diagramas de flujo con lógica condicional para escenarios financieros.',
+                        'Diseñé interfaces de negocio para visualizar y filtrar datos complejos.',
+                        'Colaboré en la implementación y validación de interfaces con distintas áreas.'
                     ]
                 }
 
@@ -1167,7 +829,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     <div class="experience-detail-meta">
 
-                        <span>Empresa</span>
+                        <span>Organización</span>
 
                         <strong>
                             ${escapeHTML(experience.company)}
@@ -1734,7 +1396,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // ===================================
 
     console.log(
-        '%c🎨 Moon Clouday Portfolio',
+        '%c🎨 Claudia Rojas Portfolio',
         `
             background: linear-gradient(
                 135deg,
