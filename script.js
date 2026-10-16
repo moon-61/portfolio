@@ -302,20 +302,75 @@ document.addEventListener('DOMContentLoaded', function () {
 
         treevo: {
             title: 'Treevo',
-            category: 'UI/UX Design',
+            category: 'UX/UI · Prototipo en Figma',
 
             tools: [
                 { name: 'Figma', icon: 'palette' }
             ],
 
-            challenge:
-                'Crear una interfaz para una aplicación móvil que incentive el reciclaje urbano en São Paulo.',
-
-            solution:
-                'Aplicación interactiva y social que informa sobre el reciclaje, incentiva la competencia amistosa entre usuarios y amigos para ver quién recicla más, e informa cuándo pasará el camión de reciclaje por la calle del usuario.',
+            sections: [
+                {
+                    title: 'Ficha del proyecto',
+                    icon: 'info-circle-fill',
+                    body: 'Proyecto académico del módulo de UX/UI en PUC-SP, São Paulo, realizado entre agosto y octubre de 2025. Éramos cuatro personas. Me encargué de organizar el trabajo, construir componentes en Figma y definir la lógica del prototipo. El proyecto se desarrolló en Figma con prototipado interactivo; no hubo programación.'
+                },
+                {
+                    title: 'El contexto y el problema',
+                    icon: 'recycle',
+                    body: 'En São Paulo, la recolección selectiva domiciliaria llega a los 96 distritos, pero la información práctica puede ser difícil de encontrar: qué día pasa el camión, qué materiales se aceptan y dónde llevar lo que no se recoge en casa. Según las fuentes consultadas para el proyecto, la ciudad también cuenta con ecopontos y puntos de entrega voluntaria. Durante la investigación identificamos que textiles como ropa usada o retazos podían terminar en la basura común cuando las personas no sabían cómo desecharlos.',
+                    items: [
+                        'La Política Nacional de Resíduos Sólidos (Ley 12.305/2010) establece la separación de residuos según su composición.',
+                        'El reto era reunir en un solo lugar opciones e información para reciclar, desde la recolección domiciliaria hasta la entrega en un punto específico.'
+                    ]
+                },
+                {
+                    title: 'La propuesta',
+                    icon: 'lightbulb-fill',
+                    body: 'Treevo propone una experiencia móvil que concentra opciones e información para facilitar el reciclaje cotidiano. La idea funciona como un “Uber del reciclaje”: permite solicitar la recolección en casa, marcar un día para llevar residuos a un punto específico y consultar contenido educativo sobre cómo separar y preparar cada material.',
+                    items: [
+                        'Incluye recompensas y misiones para motivar la participación.',
+                        'Una mascota —una planta que crece y se convierte en un melón personalizable— acompaña el progreso.',
+                        'Permite agregar amistades y comparar cuánto recicla cada persona.'
+                    ]
+                },
+                {
+                    title: 'Mi proceso y aporte',
+                    icon: 'diagram-3-fill',
+                    body: 'Al inicio me costó integrarme al equipo, que estaba formado por personas que no conocía. Con el tiempo, ayudé a ordenar el trabajo y a clarificar las tareas para que cada integrante supiera qué debía avanzar. También detecté que crear cada pantalla por separado hacía que el archivo de Figma fuera difícil de mantener.',
+                    items: [
+                        'Estudié componentes y variantes de Figma, tomando como base la introducción del profesor, y convertí elementos repetidos en componentes reutilizables.',
+                        'Organicé la estructura para que la interfaz quedara más modular y fuera más sencillo actualizar elementos sin rehacer pantallas.',
+                        'Definí conexiones y respuestas entre pantallas para que las acciones principales pudieran recorrerse en el prototipo interactivo.'
+                    ]
+                },
+                {
+                    title: 'Decisiones y aprendizajes',
+                    icon: 'palette-fill',
+                    body: 'El cambio principal fue pasar de pantallas independientes a un sistema de componentes. Esto ordenó el archivo y facilitó los ajustes de interfaz. Aprendí que diseñar interfaces también implica organizar, reutilizar y prever distintos casos, y que la claridad debe evaluarse desde la perspectiva de quien necesita usar el producto.'
+                },
+                {
+                    title: 'Resultado y alcance',
+                    icon: 'clipboard-check-fill',
+                    body: 'El resultado fue un prototipo completo y coherente en Figma, con componentes reutilizables y navegación definida para sus funciones principales. No se realizaron pruebas de uso ni se recopilaron métricas, por lo que Treevo se presenta como una propuesta de diseño, no como un producto validado.',
+                    items: [
+                        'Treevo es un prototipo académico, no un servicio oficial.',
+                        'Para convertirse en un servicio real, las agendas y los puntos de recolección tendrían que integrarse con la Prefeitura de São Paulo o con las concesionarias.'
+                    ]
+                },
+                {
+                    title: 'Fuentes consultadas',
+                    icon: 'journal-text',
+                    items: [
+                        'Prefeitura de São Paulo y SP Regula: recolección selectiva domiciliaria en los 96 distritos y canales de atención SP156.',
+                        'Prefeitura de São Paulo (SECOM): información sobre ecopontos y puntos de entrega voluntaria.',
+                        'Ley Federal 12.305/2010, Política Nacional de Resíduos Sólidos.',
+                        'Agência Câmara (2013): explicación sobre la separación en origen tras la implantación de la recolección selectiva.'
+                    ]
+                }
+            ],
 
             figmaUrl:
-                'https://www.figma.com/proto/PLRp9d0Debb2SpX4chcrsb/Treevo?page-id=0%3A1&node-id=1069-511&p=f&viewport=-891%2C1044%2C0.31&t=mSiBQdtJxyJWx0GT-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1069%3A511'
+                'https://www.figma.com/proto/PLRp9d0Debb2SpX4chcrsb/Treevo?page-id=0%3A1&node-id=1069-511&p=f&viewport=-891%2C1044%2C0.31&t=mSiBQdtJxyJWx0GT-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1069%3A511&desktop-link-click-timestamp=1792166704546&desktop-ul-exp-bucket=po&desktop-ul-pref-conflict=1'
         },
 
         moonclouday: {
