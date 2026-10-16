@@ -936,6 +936,19 @@ section {
     min-height: 118px;
 }
 
+.course-certificate-trigger {
+    width: 100%;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.course-certificate-trigger:focus-visible {
+    outline: 3px solid var(--color-purple-ink);
+    outline-offset: 3px;
+}
+
 .course-item:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -1763,6 +1776,23 @@ section {
 
 .modal-body {
     padding: 30px;
+}
+
+.certificate-modal-content {
+    border-color: var(--color-orange);
+}
+
+.certificate-modal-body {
+    display: flex;
+    justify-content: center;
+    background: var(--color-light-gray);
+}
+
+.certificate-modal-image {
+    display: block;
+    width: 100%;
+    max-height: 72vh;
+    object-fit: contain;
 }
 
 .modal-kicker {

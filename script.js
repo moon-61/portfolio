@@ -41,6 +41,27 @@ document.addEventListener('DOMContentLoaded', function () {
         '(prefers-reduced-motion: reduce)'
     );
 
+    const certificateModalLabel =
+        document.getElementById('certificateModalLabel');
+    const certificateModalImage =
+        document.getElementById('certificateModalImage');
+
+    document.querySelectorAll('.course-certificate-trigger').forEach(button => {
+        button.addEventListener('click', function () {
+            const title = this.dataset.certificateTitle;
+            const image = this.dataset.certificateImage;
+
+            if (!title || !image || !certificateModalLabel || !certificateModalImage) {
+                console.error('No se pudo cargar el certificado seleccionado.');
+                return;
+            }
+
+            certificateModalLabel.textContent = title;
+            certificateModalImage.src = image;
+            certificateModalImage.alt = `Certificado de ${title}`;
+        });
+    });
+
     // ===================================
     // SMOOTH SCROLL NAVIGATION
     // ===================================

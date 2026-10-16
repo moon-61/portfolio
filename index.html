@@ -577,7 +577,14 @@
 
                     <div class="course-grid">
 
-                        <article class="course-item">
+                        <button
+                            type="button"
+                            class="course-item course-certificate-trigger"
+                            data-bs-toggle="modal"
+                            data-bs-target="#certificateModal"
+                            data-certificate-title="Curso de Fundamentos de Design Systems"
+                            data-certificate-image="img/certificados/diploma-fundamentos-de-design-systems.jpg"
+                            aria-label="Ver certificado: Curso de Fundamentos de Design Systems">
                             <div class="course-icon">
                                 <i class="bi bi-grid-1x2-fill"></i>
                             </div>
@@ -585,9 +592,16 @@
                             <div class="course-info">
                                 <h4 class="course-name">Curso de Fundamentos de Design Systems</h4>
                             </div>
-                        </article>
+                        </button>
 
-                        <article class="course-item">
+                        <button
+                            type="button"
+                            class="course-item course-certificate-trigger"
+                            data-bs-toggle="modal"
+                            data-bs-target="#certificateModal"
+                            data-certificate-title="Curso de Figma"
+                            data-certificate-image="img/certificados/diploma-figma.jpg"
+                            aria-label="Ver certificado: Curso de Figma">
                             <div class="course-icon">
                                 <i class="bi bi-palette"></i>
                             </div>
@@ -596,9 +610,16 @@
                                 <h4 class="course-name">Curso de Figma</h4>
 
                             </div>
-                        </article>
+                        </button>
 
-                        <article class="course-item">
+                        <button
+                            type="button"
+                            class="course-item course-certificate-trigger"
+                            data-bs-toggle="modal"
+                            data-bs-target="#certificateModal"
+                            data-certificate-title="Curso de Prompt Engineering"
+                            data-certificate-image="img/certificados/diploma-prompt-engineering.jpg"
+                            aria-label="Ver certificado: Curso de Prompt Engineering">
                             <div class="course-icon">
                                 <i class="bi bi-stars"></i>
                             </div>
@@ -606,9 +627,16 @@
                             <div class="course-info">
                                 <h4 class="course-name">Curso de Prompt Engineering</h4>
                             </div>
-                        </article>
+                        </button>
 
-                        <article class="course-item">
+                        <button
+                            type="button"
+                            class="course-item course-certificate-trigger"
+                            data-bs-toggle="modal"
+                            data-bs-target="#certificateModal"
+                            data-certificate-title="Curso de Gemini"
+                            data-certificate-image="img/certificados/diploma-gemini.jpg"
+                            aria-label="Ver certificado: Curso de Gemini">
                             <div class="course-icon">
                                 <i class="bi bi-google"></i>
                             </div>
@@ -616,7 +644,7 @@
                             <div class="course-info">
                                 <h4 class="course-name">Curso de Gemini</h4>
                             </div>
-                        </article>
+                        </button>
 
                     </div>
                 </div>
@@ -831,6 +859,26 @@
                         data-bs-dismiss="modal"
                         aria-label="Cerrar">
                     </button>
+                </div>
+
+                <!-- Certificate Modal -->
+                <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content certificate-modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title" id="certificateModalLabel"></h2>
+                                <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Cerrar">
+                                </button>
+                            </div>
+                            <div class="modal-body certificate-modal-body">
+                                <img id="certificateModalImage" class="certificate-modal-image" src="" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="modal-body" id="modalContent">
