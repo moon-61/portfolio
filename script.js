@@ -45,21 +45,77 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('certificateModalLabel');
     const certificateModalImage =
         document.getElementById('certificateModalImage');
+    const certificateLightbox =
+        document.getElementById('certificateLightbox');
+    const certificateLightboxClose =
+        certificateLightbox?.querySelector('.certificate-lightbox-close');
+    let certificateTrigger = null;
 
     document.querySelectorAll('.course-certificate-trigger').forEach(button => {
         button.addEventListener('click', function () {
             const title = this.dataset.certificateTitle;
             const image = this.dataset.certificateImage;
 
-            if (!title || !image || !certificateModalLabel || !certificateModalImage) {
+            if (
+                !title ||
+                !image ||
+                !certificateModalLabel ||
+                !certificateModalImage ||
+                !certificateLightbox ||
+                !certificateLightboxClose
+            ) {
                 console.error('No se pudo cargar el certificado seleccionado.');
                 return;
             }
 
+            certificateTrigger = this;
             certificateModalLabel.textContent = title;
             certificateModalImage.src = image;
             certificateModalImage.alt = `Certificado de ${title}`;
+            certificateLightbox.hidden = false;
+            certificateLightbox.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('certificate-lightbox-open');
+            certificateLightboxClose.focus();
         });
+    });
+
+    function closeCertificateLightbox() {
+        if (!certificateLightbox) {
+            return;
+        }
+
+        certificateLightbox.hidden = true;
+        certificateLightbox.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('certificate-lightbox-open');
+        certificateTrigger?.focus();
+        certificateTrigger = null;
+    }
+
+    certificateLightboxClose?.addEventListener(
+        'click',
+        closeCertificateLightbox
+    );
+
+    certificateLightbox?.addEventListener('click', event => {
+        if (event.target === certificateLightbox) {
+            closeCertificateLightbox();
+        }
+    });
+
+    document.addEventListener('keydown', event => {
+        if (!certificateLightbox || certificateLightbox.hidden) {
+            return;
+        }
+
+        if (event.key === 'Escape') {
+            closeCertificateLightbox();
+            return;
+        }
+
+        if (event.key === 'Tab') {
+            event.preventDefault();
+            certificateLightboxClose?.focus();
+        }
     });
 
     // ===================================

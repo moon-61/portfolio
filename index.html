@@ -19,7 +19,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20261016-1926">
     <link rel="icon" type="image/png" href="img/star2.png" sizes="32x32">
 </head>
 <body>
@@ -582,8 +582,6 @@
                         <button
                             type="button"
                             class="course-item course-certificate-trigger"
-                            data-bs-toggle="modal"
-                            data-bs-target="#certificateModal"
                             data-certificate-title="Curso de Fundamentos de Design Systems"
                             data-certificate-image="img/certificados/diploma-fundamentos-de-design-systems.jpg"
                             aria-label="Ver certificado: Curso de Fundamentos de Design Systems">
@@ -599,8 +597,6 @@
                         <button
                             type="button"
                             class="course-item course-certificate-trigger"
-                            data-bs-toggle="modal"
-                            data-bs-target="#certificateModal"
                             data-certificate-title="Curso de Figma"
                             data-certificate-image="img/certificados/diploma-figma.jpg"
                             aria-label="Ver certificado: Curso de Figma">
@@ -617,8 +613,6 @@
                         <button
                             type="button"
                             class="course-item course-certificate-trigger"
-                            data-bs-toggle="modal"
-                            data-bs-target="#certificateModal"
                             data-certificate-title="Curso de Prompt Engineering"
                             data-certificate-image="img/certificados/diploma-prompt-engineering.jpg"
                             aria-label="Ver certificado: Curso de Prompt Engineering">
@@ -634,8 +628,6 @@
                         <button
                             type="button"
                             class="course-item course-certificate-trigger"
-                            data-bs-toggle="modal"
-                            data-bs-target="#certificateModal"
                             data-certificate-title="Curso de Gemini"
                             data-certificate-image="img/certificados/diploma-gemini.jpg"
                             aria-label="Ver certificado: Curso de Gemini">
@@ -703,7 +695,7 @@
                             <span>Componentes reutilizables</span><span>Patrones enterprise</span><span>Tablas y filtros</span><span>Estados de aprobación</span><span>Consistencia visual</span>
                         </div>
                     </article>
-s
+
                     <article class="skill-card">
                         <div class="skill-icon"><i class="bi bi-universal-access-circle"></i></div>
                         <h3>Accesibilidad y usabilidad</h3>
@@ -870,22 +862,27 @@ s
         </div>
     </div>
 
-    <!-- Certificate Modal -->
-    <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content certificate-modal-content">
-                <div class="modal-header">
-                    <h2 class="modal-title" id="certificateModalLabel"></h2>
-                    <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Cerrar">
-                    </button>
-                </div>
-                <div class="modal-body certificate-modal-body">
-                    <img id="certificateModalImage" class="certificate-modal-image" src="" alt="">
-                </div>
+    <!-- Certificate Viewer -->
+    <div
+        class="certificate-lightbox"
+        id="certificateLightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="certificateModalLabel"
+        aria-hidden="true"
+        hidden>
+        <div class="certificate-lightbox-content">
+            <div class="certificate-lightbox-header">
+                <h2 id="certificateModalLabel"></h2>
+                <button
+                    type="button"
+                    class="certificate-lightbox-close"
+                    aria-label="Cerrar certificado">
+                    <i class="bi bi-x-lg" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="certificate-lightbox-body">
+                <img id="certificateModalImage" src="" alt="">
             </div>
         </div>
     </div>
@@ -897,7 +894,7 @@ s
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Custom JS -->
-    <script src="script.js?v=20261016-1228"></script>
+    <script src="script.js?v=20261016-1926"></script>
 
 </body>
 </html>
